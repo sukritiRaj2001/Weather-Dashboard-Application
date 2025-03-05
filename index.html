@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Sukriti</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Panel: Current Weather -->
+        <div class="left-info">
+            <div class="pic-gradient"></div>
+            <div class="today-info">
+                <h2 id="day-name">Friday</h2>
+                <span id="date">08 September 2024</span>
+                <div>
+                    <i class='bx bx-current-location'></i>
+                    <span id="city-name">New Delhi</span>
+                </div>
+            </div>
+            <div class="today-weather">
+                <!-- Custom Weather Icon -->
+                <img id="weather-icon" src="images/weather-icon.png" alt="Weather Icon" width="80">
+                <h1 id="temperature" class="weather-temp">--°C</h1>
+                <h3 id="weather-desc">Sunny</h3>
+            </div>
+        </div>
+
+        <!-- Right Panel: Additional Information -->
+        <div class="right-info">
+            <div class="day-info">
+                <div>
+                    <span class="title">PRECIPITATION</span>
+                    <span id="precipitation" class="value">--%</span>
+                </div>
+                <div>
+                    <span class="title">HUMIDITY</span>
+                    <span id="humidity" class="value">--%</span>
+                </div>
+                <div>
+                    <span class="title">WIND SPEED</span>
+                    <span id="wind-speed" class="value">-- km/h</span>
+                </div>
+            </div>
+
+            <!-- Search Box -->
+            <div class="search-container">
+                <input type="text" id="city" placeholder="Enter city name">
+                <button id="search" class="loc-button">Search Location</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
